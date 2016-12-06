@@ -33,4 +33,35 @@ enarar
         Advent6 advent6 = new Advent6()
         assert advent6.decode(input) == 'asvcbhvg'
     }
+
+    @Test
+    void advent6bSample() {
+        String input='''eedadn
+drvtee
+eandsr
+raavrd
+atevrs
+tsrnev
+sdttsa
+rasrtv
+nssdts
+ntnada
+svetve
+tesnvt
+vntsnd
+vrdear
+dvrsen
+enarar
+'''
+
+        Advent6 advent6 = new Advent6()
+        assert advent6.decode2(input) == 'advent'
+    }
+
+    @Test
+    void advent6b() {
+        String input = this.getClass().getResource('advent6.txt').text
+        Advent6 advent6 = new Advent6()
+        assert advent6.decode2(input) == 'odqnikqv'
+    }
 }
